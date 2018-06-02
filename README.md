@@ -9,7 +9,7 @@ This project requires:
 - a remote server (you need to configure this yourself)
 
 ```bash
-$ make # Start tunnel. If no .env configuration, then it will prompt about configuration.
+$ make # Start tunnel from .env-file. If no .env-file, then it will prompt about configuration if it.
 ```
 
 ## Other commands
@@ -21,6 +21,7 @@ $ make switchto config=.env.{usethisname} # Switch .env config.
 $ make list # List all tunnels.
 $ make tunnel-log # Get autossh log.
 $ make kill filter={pid|port|server} # Kill a spesific tunnel.
+$ make killall # Kill all tunnels.
 ```
 
 It may be a good idea to look at the Makefile if you want more info.
